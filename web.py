@@ -15,7 +15,8 @@ def add_task():
 
 st.title("To-Do List")
 st.header("This is my To-Do App")
-st.write("Check the box when you have completed your task!")
+st.write("Check the box when you have <b>completed</b> your task!",
+         unsafe_allow_html=True)
 
 for index, task in enumerate(todo_list):
     checkbox = st.checkbox(task, key=task)
