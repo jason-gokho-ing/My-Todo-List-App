@@ -3,6 +3,8 @@ import functions
 
 todo_list = functions.read_todo_list()
 
+st.set_page_config(layout='wide')
+
 
 def add_task():
     new_task = st.session_state['new_task']
